@@ -16,7 +16,11 @@ function verificarVazio(){
 }
 
 function verificarEmail(){
-  if(document.getElementById("email").value != document.getElementById("confirmar_email").value){
+  var email = document.getElementById("email").value;
+
+  if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))){
+    document.getElementById("resultado").innerHTML = "E-mail inválido";
+  } else if(document.getElementById("email").value != document.getElementById("confirmar_email").value){
     document.getElementById("resultado").innerHTML = "Os e-mails não confirmam";
   } else{
     calcular();
