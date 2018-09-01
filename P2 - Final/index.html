@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Reserva</title>
+  </head>
+
+  <body>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" value="" id="nome"><br>
+
+      <label for="email">E-mail:</label>
+      <input type="text" name="email" value="" id="email"><br>
+
+      <label for="confirmar_email">Confirmação de e-mail:</label>
+      <input type="text" name="confirmar_email" value="" id="confirmar_email"><br>
+
+      <label for="data_in">Data de entrada:</label>
+      <input type="date" name="data_in" id="data_in"><br>
+
+      <label for="data_out">Data de saída:</label>
+      <input type="date" name="data_out" id="data_out"><br>
+
+      <label for="quantidade">Quantidade de quartos:</label>
+      <input type="number" name="quantidade" min="0" max="10" step="1" value="0" id="quantidade"><br>
+
+      <label for="numero">Número de hóspedes:</label>
+      <input type="number" name="numero" min="0" max="4" step="1" value="0" id="numero"><br>
+
+      <p id="resultado"></p>
+
+      <button type="button" onclick="verificarVazio();">Calcular</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
