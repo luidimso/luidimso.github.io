@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './components/home/home.component';
 import { RouterModule } from '@angular/router';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
+    ComponentsModule,
     CommonModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent }

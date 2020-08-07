@@ -1,0 +1,56 @@
+.navbar-default{
+  border-color: transparent;
+
+  .navbar-toggle {
+    border-color: transparent;
+
+    .icon-bar{
+      background-color: black;
+    }
+  }
+}
+
+.navbar {
+  background: white;
+  color: black;
+  font-size: 1.3em;
+
+  #NavComponents{
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  img {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 5.5em;
+    height: 5.5em;
+    transition: all 0.3s;
+  }
+
+  img:hover{
+    width: 6.0em;
+    height: 6.0em;
+    margin-top: -0.25em;
+    margin-left: -0.25em;
+  }
+
+  a {
+    color: black !important;
+  }
+
+  .selected{
+    font-weight: bold;
+    border-bottom: 3px solid black;
+  }
+
+  .in .selected{
+    border-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-toggle, .navbar-btn{
+      margin-top: 35px;
+    }
+}
