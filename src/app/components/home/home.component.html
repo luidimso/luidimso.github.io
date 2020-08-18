@@ -1,5 +1,19 @@
 <app-header [page]="page"></app-header>
 
-<div class="body">
+<div id="body">
+  <div class="charts">
+    <div class="desktop">
+      <canvas #lang></canvas>
+    </div>
+    <div class="desktop">
+      <canvas #framework></canvas>
+    </div>
 
+    <div class="mobile">
+      <canvas #langMobile></canvas>
+    </div>
+    <div class="mobile">
+      <canvas #frameworkMobile></canvas>
+    </div>
+  </div>
 </div>
